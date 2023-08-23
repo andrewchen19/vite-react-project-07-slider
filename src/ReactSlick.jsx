@@ -61,7 +61,7 @@ const ReactSlick = () => {
     autoplaySpeed: 1000,
     // fade 是 true 的情況下，slidesToShow 只能是 1
     fade: true,
-    // hover 時，停止動畫
+    // hover 時，是否停止動畫
     pauseOnHover: true,
     // custom arrow button (optional, library will provide default arrow buttons)
     prevArrow: <SamplePrevArrow />,
