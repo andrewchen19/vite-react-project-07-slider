@@ -13,22 +13,32 @@ import { FaQuoteRight } from "react-icons/fa";
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
-      <BiSolidLeftArrow
-        style={{ ...style, color: "red", fontSize: "30px", left: "-10px" }}
-      />
-    </div>
+    <BiSolidLeftArrow
+      className={className}
+      style={{
+        ...style,
+        color: "green",
+        width: "30px",
+        height: "30px",
+      }}
+      onClick={onClick}
+    />
   );
 }
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
-      <BiSolidRightArrow
-        style={{ ...style, color: "green", fontSize: "30px", right: "-10px" }}
-      />
-    </div>
+    <BiSolidRightArrow
+      className={className}
+      style={{
+        ...style,
+        color: "red",
+        width: "30px",
+        height: "30px",
+      }}
+      onClick={onClick}
+    />
   );
 }
 
@@ -41,7 +51,7 @@ const ReactSlick = () => {
     // 是否要無限循環
     infinite: true,
     // 切換動畫的持續時間
-    speed: 3000,
+    speed: 2500,
     // defines how many slides should be visible in once
     slidesToShow: 1,
     // defines how many slides should be scrolled
